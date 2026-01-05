@@ -1,9 +1,10 @@
-#import "@preview/simple-technical-resume:0.1.1": *
+// #import "@preview/simple-technical-resume:0.1.1": *
+#import "../src/resume.typ": *
 
-#let name = "Dwight Schrute"
-#let phone = "+1 (123) 456-7890"
-#let email = "dschrute@dundermifflin.com"
-#let github = "dwight-schrute"
+#let name = "Szymon Patryn"
+#let phone = "+1 (647) 620-2746"
+#let email = "szymonpatryn@gmail.com"
+#let github = "Szymon-7"
 #let linkedin = "dwight-schrute"
 #let personal-site = "dwightschrute.com"
 
@@ -20,14 +21,37 @@
   github-username: github
 )
 
-#custom-title("Education")[
-  #education-heading(
-    "Scranton University", "Scranton, PA",
-    "Bachelor of Arts", "Business Administration",
-    datetime(year: 1992, month: 9, day: 1),
-    datetime(year: 1998, month: 4,  day: 1)
+#custom-title("Technical Skills")[
+  #skills()[
+    - *Languages:* C, Java, Python, JavaScript, HTML, CSS
+    - *Development Tools:* Git, Github, Make, Maven, Docker, WSL
+    - *Editors & IDEs:* Vim/Neovim, VS Code, Nano
+    - *Operating Systems:* Mac, Windows, Linux (Arch, Ubuntu)
+    - *Other Technologies:* LaTeX, Valgrind, SQL
+  ]
+]
+
+#custom-title("Personal Projects")[
+  #project-heading(
+    "Schrute Farms (Bed and Breakfast)",
   )[
-    - Awarded “Most Determined Student” in senior year
+    - Established and managed a family-run agro-tourism business offering unique activities such as table-making workshops, beet farming tours, and hay rides
+    - Increased guest bookings by 50% through effective online marketing and guest engagement
+    - Maintained a 4.9/5 guest satisfaction rating on travel review platforms
+  ]
+
+  #project-heading(
+    "Dwight Schrute's Gym for Muscles",
+  )[
+    - Designed and equipped a workplace gym, promoting health and wellness for Dunder Mifflin employees
+    - Created a recycling program, offering monetary incentives (5 cents per yard of tin) to encourage sustainable practices
+  ]
+
+  #project-heading(
+    "Sesame Avenue Daycare Center for Infants and Toddlers",
+  )[
+    - Founded an innovative daycare focused on cognitive development and early learning strategies
+    - Developed specialized programs combining physical activities and educational games for children
   ]
 ]
 
@@ -82,36 +106,21 @@
   ]
 ]
 
-
-#custom-title("Projects")[
-  #project-heading(
-    "Schrute Farms (Bed and Breakfast)",
+#custom-title("Education")[
+  #education-heading(
+    "University of Guelph", "Guelph, ON",
+    "Bachelor of Computing", "Computer Science (Co-op)",
+    datetime(year: 2024, month: 9, day: 1),
+    "Present"
   )[
-    - Established and managed a family-run agro-tourism business offering unique activities such as table-making workshops, beet farming tours, and hay rides
-    - Increased guest bookings by 50% through effective online marketing and guest engagement
-    - Maintained a 4.9/5 guest satisfaction rating on travel review platforms
+    - Dean’s Honours List (All Semesters) with an 88% cumulative average
+    - Pursuing a minor in Business
   ]
+*Key academic projects:*
+#v(-1em)
+#block(inset: 1em)[
+*Local Animal Database (2025)* - Developed in C to store, sort, and classify animal data using file I/O and basic machine learning algorithms; evaluated prediction accuracy and collaborated with peers for brainstorming and debugging support while working independently
 
-  #project-heading(
-    "Dwight Schrute's Gym for Muscles",
-  )[
-    - Designed and equipped a workplace gym, promoting health and wellness for Dunder Mifflin employees
-    - Created a recycling program, offering monetary incentives (5 cents per yard of tin) to encourage sustainable practices
-  ]
-
-  #project-heading(
-    "Sesame Avenue Daycare Center for Infants and Toddlers",
-  )[
-    - Founded an innovative daycare focused on cognitive development and early learning strategies
-    - Developed specialized programs combining physical activities and educational games for children
-  ]
+*Music Playlist Manager (2025)* - Created in C using linked lists to manage a dynamic song playlist; implemented features for adding, removing, and searching songs by ID and title, and reinforced understanding of pointer manipulation and dynamic memory 
 ]
-
-
-#custom-title("Skills")[
-  #skills()[
-    - *Professional Skills:* Sales Expertise, Leadership, Conflict Resolution, Strategic Planning, Negotiation
-    - *Personal Traits:* Hardworking, Alpha Male, Jackhammer, Merciless, Insatiable
-    - *Specialized Talents:* Karate (Black Belt), Jujitsu, Werewolf Hunting, Table Making
-  ]
 ]

@@ -62,7 +62,8 @@
   }
 
   align(author-position, [
-    #upper(text(font-size+16pt, weight: "extrabold")[#author-name])
+    // #upper(text(font-size+16pt, weight: "extrabold")[#author-name])
+    #smallcaps(text(font-size+16pt, weight: "extrabold")[#author-name])
     #v(-2em)
   ])
 
