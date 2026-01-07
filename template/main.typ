@@ -5,8 +5,8 @@
 #let phone = "+1 (647) 620-2746"
 #let email = "szymonpatryn@gmail.com"
 #let github = "Szymon-7"
-#let linkedin = "dwight-schrute"
-#let personal-site = "dwightschrute.com"
+#let linkedin = ""
+#let personal-site = ""
 
 #show: resume.with(
   top-margin: 0.45in,
@@ -23,104 +23,75 @@
 
 #custom-title("Technical Skills")[
   #skills()[
-    - *Languages:* C, Java, Python, JavaScript, HTML, CSS
-    - *Development Tools:* Git, Github, Make, Maven, Docker, WSL
-    - *Editors & IDEs:* Vim/Neovim, VS Code, Nano
-    - *Operating Systems:* Mac, Windows, Linux (Arch, Ubuntu)
-    - *Other Technologies:* LaTeX, Valgrind, SQL
+    - *Programming Languages:* Python, Java, C, JavaScript, HTML, CSS
+    - *Development Tools:* Git, GitHub/GitLab, Make, Maven, Docker, WSL
+    - *Operating Systems:* macOS, Windows, Linux (Arch, Ubuntu)
+    - *Other Technologies:* Neovim, LaTeX, Typst, Valgrind, SQL
+    - *Foundational / Learning:* NumPy, Pandas, scikit-learn, PyTorch
   ]
 ]
 
 #custom-title("Personal Projects")[
   #project-heading(
-    "Schrute Farms (Bed and Breakfast)",
+    "Maze Runner Game",
+    datetime(year:2025, month:7, day:1),
+    datetime(year:2026, month:1, day:1),
   )[
-    - Established and managed a family-run agro-tourism business offering unique activities such as table-making workshops, beet farming tours, and hay rides
-    - Increased guest bookings by 50% through effective online marketing and guest engagement
-    - Maintained a 4.9/5 guest satisfaction rating on travel review platforms
+    - Designed and implemented a modular 2D maze exploration game in Java using JavaFX, following an engine-style architecture that cleanly separates rendering, input handling, collision detection, audio, and game logic.
+    - Built a procedural maze generation system using depth-first search (DFS) that dynamically expands the maze as the player progresses
+    - Developed real-time gameplay systems including sprite-based animation, fog-of-war lighting, destructible walls, and a coin-based economy with shops and upgradeable abilities
+    - Optimized rendering and animation performance through canvas scaling, image smoothing control, and view-relative drawing, producing self-contained builds suitable for distribution
   ]
 
   #project-heading(
-    "Dwight Schrute's Gym for Muscles",
+    "ASCII Art Generator",
+    datetime(year:2025, month:11, day:1),
+    datetime(year:2025, month:12, day:1),
   )[
-    - Designed and equipped a workplace gym, promoting health and wellness for Dunder Mifflin employees
-    - Created a recycling program, offering monetary incentives (5 cents per yard of tin) to encourage sustainable practices
-  ]
-
-  #project-heading(
-    "Sesame Avenue Daycare Center for Infants and Toddlers",
-  )[
-    - Founded an innovative daycare focused on cognitive development and early learning strategies
-    - Developed specialized programs combining physical activities and educational games for children
-  ]
+    - Built a terminal-based ASCII art generator in C, supporting both text-to-ASCII art and image-to-ASCII art conversion with configurable scaling and output resolution.
+    - Implemented an image processing pipeline using the single-header C image decoding library, stb_image, to convert PNG images into ASCII art representations via pixel brightness mapping and aspect-ratio correction.
+    - Added true-colour (24-bit RGB) ANSI terminal output, mapping per-pixel colour data to coloured ASCII characters for accurate colour reproduction in supported terminals.
+  ] 
 ]
 
-#custom-title("Experience")[  
+#custom-title("Technical Work Experiences")[  
   #work-heading(
-    "Regional Manager",
-    "Dunder Mifflin",
-    "Scranton, PA",
-    datetime(year:2013, month:5, day:1),
-    "Present"
+    "AI Training Contributor",
+    "DataAnnotation",
+    "Remote",
+    datetime(year:2025, month:4, day:1),
+    datetime(year:2025, month:9, day:1)
   )[
-    - Led a team of 10+ employees, boosting office productivity and morale
-    - Maintained the highest sales average, outperforming competitors despite market challenges
-    - Implemented innovative security measures to protect the office from threats, including criminal activity and wildlife intrusions
-    - Successfully negotiated client contracts, increasing annual revenue by 20%
-  ]
-
-  #work-heading(
-    "Assistant (to the) Regional Manager",
-    "Dunder Mifflin",
-    "Scranton, PA",
-    datetime(year:2008, month:3, day:1),
-    datetime(year:2013, month:3, day:1),
-  )[
-    - Developed and enforced company policies through the creation of the “Schrute Bucks” incentive program, improving employee engagement
-    - Achieved record-breaking sales, earning the title of top salesperson for five consecutive years
-    - Supported managerial functions, including staff supervision, client relationship management, and strategic planning
-  ]
-
-  #work-heading(
-    "Sales Associate",
-    "Staples",
-    "Scranton, PA",
-    datetime(year:2008, month:3, day:1),
-    datetime(year:2008, month:3, day:1),
-  )[
-    - Recognized as “Employee of the Month” for outstanding sales performance within a single month
-    - Leveraged exceptional customer service skills to build a loyal client base
-    - Demonstrated leadership by training new hires on effective sales techniques
-  ]
-
-  #work-heading(
-    "Assistant (to the) Regional Manager",
-    "Dunder Mifflin",
-    "Scranton, PA",
-    datetime(year:2008, month:3, day:1),
-    datetime(year:2005, month:3, day:1),
-  )[
-    - Exceeded individual sales targets, contributing significantly to branch profitability
-    - Introduced “Schrute Bucks” as a motivational tool, fostering a competitive \& collaborative work environment
-    - Assisted in coordinating office events and initiatives to maintain team cohesion
+    - Assessed and ranked AI-generated code solutions for accuracy, clarity, and adherence to task requirements across multiple programming languages
+    - Contributed to training large language models by evaluating the quality and correctness of coding task responses
+    - Gained hands-on experience with software development practices, debugging, and algorithmic problem-solving through technical review
+    - Worked with Java, Python, Docker, and web-based platforms to support real-world AI coding workflows
   ]
 ]
 
 #custom-title("Education")[
   #education-heading(
     "University of Guelph", "Guelph, ON",
-    "Bachelor of Computing", "Computer Science (Co-op)",
+    "Bachelor of Computing Honours", "Computer Science (Co-op)",
     datetime(year: 2024, month: 9, day: 1),
     "Present"
   )[
     - Dean’s Honours List (All Semesters) with an 88% cumulative average
     - Pursuing a minor in Business
   ]
-*Key academic projects:*
-#v(-1em)
-#block(inset: 1em)[
-*Local Animal Database (2025)* - Developed in C to store, sort, and classify animal data using file I/O and basic machine learning algorithms; evaluated prediction accuracy and collaborated with peers for brainstorming and debugging support while working independently
-
-*Music Playlist Manager (2025)* - Created in C using linked lists to manage a dynamic song playlist; implemented features for adding, removing, and searching songs by ID and title, and reinforced understanding of pointer manipulation and dynamic memory 
 ]
+
+#custom-title("Extra-Curricular Experiences")[
+  #work-heading(
+    "Member",
+    "Google Developer Group (GDG)",
+    "University of Guelph",
+    datetime(year:2024, month:9, day:1),
+    "Present"
+  )[
+    - Placed 2nd in the 2024 Portfolio Website Contest by designing and building a personal portfolio site using HTML and CSS
+    - Enhanced the portfolio website with JavaScript interactivity during a post-contest workshop, including features like a custom navbar
+    - Collaborated with peers through team activities, peer feedback, and collective problem-solving to improve project outcomes and develop teamwork skills
+    - Actively participated in workshops and projects focused on web development and programming
+  ]
 ]

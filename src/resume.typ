@@ -179,16 +179,21 @@
 }
 
 // Pretty self-explanatory.
-#let project-heading(name, stack: "", project-url: "", body) = {
-  if project-url.len() != 0 { link(project-url)[*#name*] } else {
-    [*#name*] 
-  }
+#let project-heading(name, stack: "", project-url: "", start-date, end-date, body) = {
+  // if project-url.len() != 0 { link(project-url)[*#name*] } else {
+  //   [*#name*] 
+  // }
   if stack != "" {
     [
       #show "|": sep => { h(0.3em); [|]; h(0.3em) }
       |*#stack*
     ]
   }
+  generic_2x2(
+    (1fr, 1fr),
+    [*#name*], [*#period_worked(start-date, end-date)*], 
+    "", ""
+  )
   v(-0.2em)
   if body != [] {
     v(-0.4em)
