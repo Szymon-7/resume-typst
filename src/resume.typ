@@ -179,7 +179,7 @@
 }
 
 // Pretty self-explanatory.
-#let project-heading(name, stack: "", project-url: "", start-date, end-date, body) = {
+#let project-heading(name, stack: "", project-url: "", start-date, body) = {
   // if project-url.len() != 0 { link(project-url)[*#name*] } else {
   //   [*#name*] 
   // }
@@ -191,7 +191,7 @@
   }
   generic_2x2(
     (1fr, 1fr),
-    [*#name*], [*#period_worked(start-date, end-date)*], 
+    [*#name*], [*#start-date*], 
     "", ""
   )
   v(-0.2em)
@@ -211,8 +211,8 @@
 
   generic_2x2(
     (70%, 30%),
-    [*#institution*], [*#location*], 
-    [#degree, #major], period_worked(start-date, end-date)
+    [*#degree, #major*], [*#period_worked(start-date, end-date)*],
+    [#institution], [#location], 
   )
   v(-0.2em)
   if body != [] {

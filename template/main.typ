@@ -3,7 +3,7 @@
 
 #let name = "Szymon Patryn"
 #let phone = "+1 (647) 620-2746"
-#let email = "szymonpatryn@gmail.com"
+#let email = "spatryn@uoguelph.ca"
 #let github = "Szymon-7"
 #let linkedin = ""
 #let personal-site = ""
@@ -34,8 +34,7 @@
 #custom-title("Personal Projects")[
   #project-heading(
     "Maze Runner Game",
-    datetime(year:2025, month:7, day:1),
-    datetime(year:2026, month:1, day:1),
+    "Jul 2025 – Jan 2026",
   )[
     - Designed and implemented a modular 2D maze exploration game in Java using JavaFX, following an engine-style architecture that cleanly separates rendering, input handling, collision detection, audio, and game logic.
     - Built a procedural maze generation system using depth-first search (DFS) that dynamically expands the maze as the player progresses
@@ -45,8 +44,7 @@
 
   #project-heading(
     "ASCII Art Generator",
-    datetime(year:2025, month:11, day:1),
-    datetime(year:2025, month:12, day:1),
+    "Nov 2025 – Dec 2025",
   )[
     - Built a terminal-based ASCII art generator in C, supporting both text-to-ASCII art and image-to-ASCII art conversion with configurable scaling and output resolution.
     - Implemented an image processing pipeline using the single-header C image decoding library, stb_image, to convert PNG images into ASCII art representations via pixel brightness mapping and aspect-ratio correction.
