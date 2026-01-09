@@ -22,32 +22,59 @@
   linkedin-user-id: linkedin,
   github-username: github
 )
+
+
+
+// Fill in details here
+#let SALUTATION = "Ms."
+#let FNAME = "Robo"
+#let LNAME = "Madam"
+#let CONTACT_TITLE = "Lead Hiring Robo"
+#let DEPARTMENT = "Head Office"
+#let ORGANIZATION = "Robot Org"
+#let ADDRESS = "123 ABC Blvd"
+#let CITY = "Toronto"
+#let PROVINCE = "ON"
+#let POSTALCODE = "ABC 123"
+
+#let DATE = "August 31, 2050"
+
+// Have as many comma separated paragraphs here as you would like
+// You probably want to keep the cover letter a single page
+#let PARAGRAPHS = (
+
+"paragraph 1",
+
+"paragraph 2",
+
+"paragraph 3",
+
+"paragraph 4",
+
+"paragraph 5"
+
+)
+
 #line(length: 100%, stroke: stroke(thickness: 0.4pt))
 #v(1em)
 
 #text(11pt)[
 
-SALUTATION NAME\
-CONTACT TITLE, DEPARTMENT\
-ORGANIZATION\
-ADDRESS\
-CITY, PROVINCE POSTALCODE\
+#SALUTATION #FNAME #LNAME\
+#CONTACT_TITLE, #DEPARTMENT\
+#ORGANIZATION\
+#ADDRESS\
+#CITY, #PROVINCE #POSTALCODE\
 #v(1em)
-DATE\
+#DATE\
 #v(1em)
-Dear SALUTATION LASTNAME,
+Dear #SALUTATION #LNAME,
 #v(1em)
-Paragraph
-#v(1em)
-Paragraph
-#v(1em)
-Paragraph
-#v(1em)
-Paragraph
-#v(1em)
-Paragraph
-#v(1em)
+#for P in PARAGRAPHS [
+  #P
+  #v(1em)
+]
 Sincerely,\
-Szymon Patryn
+#name
 ]
 
